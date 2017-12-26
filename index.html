@@ -1,58 +1,241 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Billy's Website</title>
-  <link rel="stylesheet" type="text/css" href="styles/all.css" media="all"/>
-  <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Domine:700" rel="stylesheet">
-</head>
-<body>
+  <title>Billy Zhu</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <nav>
-    <ul>
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="projects.html">Projects</a><li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+  <link rel="stylesheet" href="styles/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="styles/all.css" media="all"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" type="image/ico" href="images/favicon.png"/>
+
+  <script src="scripts/jquery-3.2.1.min.js"></script>
+  <script src="scripts/bootstrap.min.js"></script>
+  <script src="scripts/script.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#myPage">Billy Zhu</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#projects">PROJECTS</a></li>
+          <li><a href="#gallery">GALLERY</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
   </nav>
 
-  <div class="canvas">
-
-    <h1>Hi, I'm Billy!</h1>
-    <!-- This is a picture of me pulled from my Facebook page
-    https://scontent-lga3-1.xx.fbcdn.net/v/t31.0-8/12909482_1066365510109744_3
-    07681727612093473_o.jpg?oh=a02ec654b1ea2fc2ec699a3c8e740ca3&oe=5A26D23F -->
-    <img class="pic_me" src="images/Billy.jpg" alt="Picture of Me"/>
-
-    <!--Another photo from my Facebook page
-    https://www.facebook.com/photo.php?fbid=907830682629895&set=a.
-    102063593206612.4327.100002089145586&type=3&theater -->
-    <img class="pic_me" src="images/Billy2.jpg" alt="Another picture of me"/>
-
-    <div class=text>
-      <p>
-        Hi there! My name is Billy Zhu and I'm currently a junior, majoring in Information Science
-        in the College of Arts and Sciences at Cornell University. I was born on October 5th, 1997
-        in Queens, New York and have spent the majority of my life there. Fun fact, I have never
-        really traveled-- in fact, I've never been on an airplane before. However, New York City
-        is such a melting pot of culture and ideas that I do not have to travel far to experience
-        the riches the world has to offer.
-      </p>
-      <p>
-        In my free time I like to tinker with code, watch movies and TV shows, hang out with friends,
-        and play some pick-up basketball. My favorite films include: Shawshank Redemption,
-        La La Land, The Batman Trilogy, and The Lord of the Rings Trilogy. My favorite TV
-        shows are: Fargo, Game of Thrones, The Office, and Westworld. I'm a very casual
-        gamer and I also love to play a lot of Tetris! I am also very interested in technology.
-        As a part-time job, I  work at the Cornell Store in the TechConnect department so
-        feel free to stop by and pay me a visit!
-      </p>
-    </div>
-    <footer>
-      &copy; 2017 | Billy Zhu
-    </footer>
+  <div class="bg"></div>
+  <div class="jumbotron text-center">
+    <h1>Billy Zhu</h1>
+    <p>Information Science Student at Cornell University</p>
   </div>
+
+  <!-- Container (About Section) -->
+  <div id="about" class="container-fluid">
+    <h2 class="text-center">About Me</h2><br>
+    <div class="row">
+      <div class="col-sm-4" >
+        <span><img class="img-circle" id="billy_pic" src="images/Billy.jpg" alt="Picture of Me"/></span>
+      </div>
+      <div class="col-sm-8">
+        <h4>Hi I'm Billy!</h4><br>
+        <p>
+          Hi there! My name is Billy Zhu and I'm currently a junior, majoring in Information Science
+          and minoring in Computer Science in the College of Arts and Sciences at Cornell University.
+          I was born and raised in Queens, New York and have spent the majority of my life there.
+          Fun fact: I have never really traveled-- in fact, I've never been on an airplane before. However,
+          New York City is such a melting pot of culture and ideas that I do not have to travel far to experience
+          the riches the world has to offer.
+        </p>
+        <p>
+          In my free time I like to tinker with code, watch movies and TV shows, hang out with friends,
+          and play some pick-up basketball. My favorite films include: Shawshank Redemption,
+          La La Land, The Batman Trilogy, and The Lord of the Rings Trilogy. My favorite TV
+          shows are: Fargo, Game of Thrones, The Office, and Westworld. I'm a very casual
+          gamer and I also love to play a lot of Tetris! I am also currently a Teaching Assistant for INFO/CS 2300
+          - Intermediate Web Design.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Container (Services Section) -->
+  <div id="projects" class="container-fluid text-center bg-grey">
+    <h2>Projects</h2><br>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="images/mips.png" alt="MIPS Processor">
+          <div class="carousel-caption">
+            <h3>MIPS Processor</h3>
+            <p>Built a mini MIPS processor in Logisim that performed a subset
+              of MIPS instruction. Wrote about 1,000 lines of test code in MIPS
+              assembly language to test the circuit.
+            </p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="images/tob.png" alt="Temple of Boom">
+          <div class="carousel-caption">
+            <h3>Temple of Boom</h3>
+            <p>Wrote algorithms utilizing depth first search, breadth first search,
+              and Dijkstra’s for a GUI Java game.
+            </p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="images/photo_gal.png" alt="Maddie Freeman Photography">
+          <div class="carousel-caption">
+            <h3>Maddie Freeman Photography</h3>
+            <p>
+              Used PHP, SQL, HTML, and CSS to create a professional photography website for
+              a client. Provided login, uploading, and editing functionalities.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+
+  <div id="mobile_proj">
+    <div class="col-sm-4 projects">
+      <img src="images/mips.png" alt="MIPS Processor">
+      <div class="caption">
+        <p><strong>MIPS Processor - </strong>Built a mini MIPS processor in Logisim that performed a subset
+          of MIPS instruction. Wrote about 1,000 lines of test code in MIPS
+          assembly language to test the circuit.
+        </p>
+      </div>
+    </div>
+
+    <div class="col-sm-4 projects">
+      <img src="images/tob.png" alt="Temple of Boom">
+      <div class="caption">
+        <p><strong>Temple of Boom - </strong>Wrote algorithms utilizing depth first search, breadth first search,
+          and Dijkstra’s for a GUI Java game.
+        </p>
+      </div>
+    </div>
+
+    <div class="col-sm-4 projects">
+      <img src="images/photo_gal.png" alt="Maddie Freeman Photography">
+      <div class="caption">
+        <p>
+          <strong>Maddie Freeman Photography - </strong>
+          Used PHP, SQL, HTML, and CSS to create a professional photography website for
+          a client. Provided login, uploading, and editing functionalities.
+        </p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div id="gallery" class="container-fluid text-center">
+    <h2>Gallery</h2><br>
+    <p>In my spare time, I like to do some mobile photography on my LG G6.
+       Here are some of my photos. Enjoy!</p>
+    <div class="row text-center slideanim">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="images/alina.jpg" alt="alina" width="400" height="300">
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="images/building.jpg" alt="building" width="400" height="300">
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="images/dandelion.jpg" alt="dandelion" width="400" height="300">
+        </div>
+      </div>
+    </div><br>
+    <div class="row text-center slideanim">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="images/flower.jpg" alt="flower" width="400" height="300">
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="images/sea.jpg" alt="sea" width="400" height="300">
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="images/tower.jpg" alt="tower" width="400" height="300">
+        </div>
+      </div>
+    </div><br>
+</div>
+
+
+  <!-- Container (Contact Section) -->
+  <div id="contact" class="container-fluid bg-grey">
+    <h2 class="text-center">CONTACT</h2>
+    <div class="row">
+      <div class="col-sm-5 col-lg-offset-2">
+        <h4>Contact me and I'll get back to you as soon as possible!</h4>
+        <p><span class="glyphicon glyphicon-map-marker"></span> New York, US</p>
+        <p><span class="glyphicon glyphicon-phone"></span> 347-235-9972</p>
+        <p><span class="glyphicon glyphicon-envelope"></span> bz83@cornell.edu</p>
+      </div>
+      <div class="col-sm-5 slideanim">
+        <h4>Connect with me!</h4>
+        <a href="https://www.facebook.com/billyzhuptl" target="_blank"><i class="fa fa-facebook social_media" style="font-size:36px"></i></a>
+        <a href="https://www.instagram.com/zhub97/" target="_blank"><i class="fa fa-instagram social_media" style="font-size:36px"></i></a>
+        <a href="https://www.linkedin.com/in/billy-zhu" target="_blank"><i class="fa fa-linkedin social_media" style="font-size:36px"></i></a>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="container-fluid text-center bg-grey">
+    <a href="#myPage" title="To Top">
+      <span class="glyphicon glyphicon-chevron-up"></span>
+    </a>
+    <p>&copy; 2017 | Billy Zhu</p>
+  </footer>
+
+
 </body>
 </html>

@@ -1,108 +1,194 @@
-*{
-  margin: 0px;
-  padding: 0px;
-  font-family: 'Catamaran', sans-serif;
-}
-
-/* Navbar styling from
-https://www.w3schools.com/css/css_navbar.asp */
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 150px;
-    background-color: #333333;
-    height: 100%; /* Full height */
-    position: fixed; /* Make it stick, even on scroll */
-    overflow: auto; /* Enable scrolling if the sidenav has too much content */
-}
-
-li a {
-    display: block;
-    color: white;
-    padding: 8px 16px;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-li a.active {
-    background-color: #ff4d4d;
-    color: white;
-}
-
 body{
-  background-color: #f2f2f2;
-}
-
-.canvas{
-  padding-left: 175px;
-  padding-top: 20px;
-  padding-right: 20px;
-}
-
-.text{
-  padding-right: 80px;
-}
-
-.text p{
-  padding-bottom: 30px;
-}
-
-#gallery_text{
-  padding-top: 20px;
-  padding-bottom: 20px;
+  font: 400 15px 'Open Sans', sans-serif;
+  line-height: 1.6;
+  color: #818181;
 }
 
 h1{
-  font-family: 'Domine', serif;
-  font-size: 3em;
-  font-weight: bolder;
+  padding-top: 100px;
+}
+h2 {
+  font-family: 'Lato', sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #303030;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+h4 {
+  font-family: 'Lato', sans-serif;
+  font-size: 19px;
+  color: #303030;
+  font-weight: 400;
+  margin-bottom: 30px;
 }
 
-.proj_head{
-  font-family: 'Domine', serif;
-  font-size: 2em;
+.bg {
+  background: url('../images/jumbotron.png') no-repeat center center;
+  position: fixed;
+  width: 100%;
+
+  background-position: center;
+  background-size: cover;
+  height: 350px; /*same height as jumbotron */
+  top:0;
+  left:0;
+  z-index: -1;
+
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);
 }
 
-.italic{
-  font-style: italic;
+.jumbotron {
+  height: 350px;
+  color: #fff;
+  text-shadow: #444 0 1px 1px;
+  background:transparent;
+  font-family: 'Montserrat', sans-serif;
 }
 
-h2{
-  margin-top: 20px;
+.container-fluid {
+  padding-bottom: 50px;
+  padding-left: 7%;
+  padding-right: 7%;
+}
+.bg-grey {
+  background-color: #f6f6f6;
 }
 
-p{
-  font-size: 20px;
+#billy_pic{
+  width: 100%;
+}
+.thumbnail {
+  padding: 0px;
+  border: none;
+  border-radius: 0;
+}
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+}
+.carousel-control.right, .carousel-control.left {
+  background-image: none;
+  color: #f4511e;
+}
+.carousel-indicators li {
+  border-color: #f4511e;
+}
+.carousel-indicators li.active {
+  background-color: #f4511e;
 }
 
+.carousel-caption h3 {
+  color: #fff !important;
+}
 
-.pic_me{
+.carousel-caption{
+  background-color: black;
+  opacity: 0.8;
+}
+
+#myCarousel{
+  margin: auto;
+  width: 80%;
+}
+
+.projects img{
+  width: 80%;
+  margin: auto;
+}
+
+strong{
+  color: black;
+}
+.social_media{
   padding-left: 20px;
-  width: 43%;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  color: black;
 }
 
-.proj_pic{
-  padding-top: 10px;
-  width: 85%;
+.navbar {
+  margin-bottom: 0;
+  background-color: #047bd6;
+  z-index: 9999;
+  border: 0;
+  font-size: 16px !important;
+  line-height: 1.7!important;
+  letter-spacing: 2px;
+  font-family: 'Montserrat', sans-serif;
+}
+.navbar li a, .navbar .navbar-brand {
+  color: #fff !important;
+}
+.navbar-nav li a:hover, .navbar-nav li.active a {
+  color: #047bd6 !important;
+  background-color: #fff !important;
+}
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+  color: #fff !important;
 }
 
-footer{
-  padding-top: 75px;
-}
-
-.smpl_img{
-  width: 32%;
-  padding-right: 5px;
-  height: auto;
-}
-
-.tab, #fb{
-  padding-left: 30px;
-}
-
-#email{
+footer .glyphicon {
   font-size: 20px;
+  margin-bottom: 20px;
+  color: #047bd6;
+}
+
+.slideanim {visibility:hidden;}
+
+.slide {
+  animation-name: slide;
+  -webkit-animation-name: slide;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  visibility: visible;
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+@media screen and (max-width: 768px) {
+  .col-sm-4 {
+    text-align: center;
+    margin: 25px 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .navbar-default .navbar-toggle .icon-bar{
+    background-color: white;
+  }
+
+  #myCarousel{
+    width:100%;
+  }
+
+  .carousel-caption {
+    display:none;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  #mobile_proj{
+    display: none;
+  }
 }
