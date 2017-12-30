@@ -46,7 +46,7 @@ h4 {
 
 .bg {
   background: url('../images/jumbotron.png') no-repeat center center;
-  position: fixed;
+  position: absolute;
   width: 100%;
 
   background-position: center;
