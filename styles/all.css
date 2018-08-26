@@ -101,6 +101,9 @@ h4 {
 .carousel-indicators li.active {
   background-color: #f4511e;
 }
+.carousel-img{
+  margin: auto;
+}
 
 .carousel-caption h3 {
   color: #fff !important;
