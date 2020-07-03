@@ -1,23 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Billy Zhu</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="styles/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="styles/all.css" media="all"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="shortcut icon" type="image/ico" href="images/favicon.png"/>
+  <link rel="stylesheet" type="text/css" href="styles/all.css" media="all" />
+  <link rel="shortcut icon" type="image/ico" href="images/Bz.png" />
 
   <script src="scripts/jquery-3.2.1.min.js"></script>
   <script src="scripts/bootstrap.min.js"></script>
   <script src="scripts/script.js"></script>
-
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
+
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
   <nav class="navbar navbar-default navbar-fixed-top">
@@ -28,147 +25,156 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
+        <a class="navbar-brand" href="#myPage"><img alt="Bz" src="images/Bz.png" height="20"></a>
         <a class="navbar-brand" href="#myPage">Billy Zhu</a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#about">ABOUT</a></li>
           <li><a href="#projects">PROJECTS</a></li>
-          <li><a href="#gallery">GALLERY</a></li>
+          <li><a href="#photos">PHOTOGRAPHY</a></li>
           <li><a href="#contact">CONTACT</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <div class="bg"></div>
+  <div id="banner"></div>
   <div class="jumbotron text-center">
+    <img class="img-circle-polygon" id="billy_polygon" src="images/BillyPolygon.png" alt="Picture of Me" />
     <h1>Billy Zhu</h1>
-    <p>Information Science Student at Cornell University</p>
+    <p>Full Stack Software Engineer</p>
   </div>
 
-  <!-- Container (About Section) -->
-  <div id="about" class="container-fluid">
-    <h2 class="text-center">About Me</h2><br>
+  <div id=" about" class="container-fluid">
     <div class="row">
-      <div class="col-sm-4" >
-        <span><img class="img-circle" id="billy_pic" src="images/Billy.jpg" alt="Picture of Me"/></span>
+      <div class="col-sm-4 about_pic">
+        <img class="img-circle" id="billy_pic" src="images/billyGrad.jpg" alt="Picture of Me" />
       </div>
       <div class="col-sm-8">
-        <h4>Hi I'm Billy!</h4><br>
+        <h2>About Me</h2><br>
         <p>
-          Hi there! My name is Billy Zhu and I'm currently a senior, majoring in Information Science
-          and minoring in Computer Science in the College of Arts and Sciences at Cornell University.
-          I'm an incoming Full Stack Web Developer for Next Jump and am passionate about various Web Technologies.
+          Hi there! My name is Billy Zhu and I'm currently a full time Full Stack
+          Software Engineer for Next Jump and am passionate about various Web Technologies.
+          I recently graduated from the College of Arts and Sciences at Cornell University
+          where I majored in Information Science and minored in Computer Science.
         </p>
         <p>
-          In my free time I like to tinker with code, watch movies and TV shows, hang out with friends,
+          In my free time I like to watch movies and TV shows, hang out with friends, take and edit pictures,
           and play some pick-up basketball. My favorite films include: Shawshank Redemption,
           La La Land, The Batman Trilogy, and The Lord of the Rings Trilogy. My favorite TV
           shows are: Fargo, Game of Thrones, The Office, and Westworld. I'm a very casual
-          gamer and I also love to play a lot of Tetris! I am also currently a Teaching Assistant for INFO/CS 1300
-          - Introduction to Web Design.
+          gamer and I also love to play a lot of Tetris!
         </p>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- Container (Services Section) -->
-  <div id="projects" class="container-fluid text-center bg-grey">
-    <h2>Projects</h2><br>
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <img class="carousel-img"  src="images/mips.png" alt="MIPS Processor">
-          <div class="carousel-caption">
-            <h3>MIPS Processor</h3>
-            <p>Built a mini MIPS processor in Logisim that performed a subset
-              of MIPS instruction. Wrote about 1,000 lines of test code in MIPS
-              assembly language to test the circuit.
-            </p>
-          </div>
-        </div>
-
-        <div class="item">
-          <img class="carousel-img"  src="images/tob.png" alt="Temple of Boom">
-          <div class="carousel-caption">
-            <h3>Temple of Boom</h3>
-            <p>Wrote algorithms utilizing depth first search, breadth first search,
-              and Dijkstra’s for a GUI Java game.
-            </p>
-          </div>
-        </div>
-
-        <div class="item">
-          <img class="carousel-img" src="images/photo_gal.png" alt="Maddie Freeman Photography">
-          <div class="carousel-caption">
-            <h3>Maddie Freeman Photography</h3>
-            <p>
-              Used PHP, SQL, HTML, and CSS to create a professional photography website for
-              a client. Provided login, uploading, and editing functionalities.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Left and right controls -->
-      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-
-
-  <div id="mobile_proj">
-    <div class="col-sm-4 projects">
-      <img src="images/mips.png" alt="MIPS Processor">
-      <div class="caption">
-        <p><strong>MIPS Processor - </strong>Built a mini MIPS processor in Logisim that performed a subset
-          of MIPS instruction. Wrote about 1,000 lines of test code in MIPS
-          assembly language to test the circuit.
-        </p>
-      </div>
-    </div>
-
-    <div class="col-sm-4 projects">
-      <img src="images/tob.png" alt="Temple of Boom">
-      <div class="caption">
-        <p><strong>Temple of Boom - </strong>Wrote algorithms utilizing depth first search, breadth first search,
-          and Dijkstra’s for a GUI Java game.
-        </p>
-      </div>
-    </div>
-
-    <div class="col-sm-4 projects">
-      <img src="images/photo_gal.png" alt="Maddie Freeman Photography">
-      <div class="caption">
         <p>
-          <strong>Maddie Freeman Photography - </strong>
-          Used PHP, SQL, HTML, and CSS to create a professional photography website for
-          a client. Provided login, uploading, and editing functionalities.
+          I also have a newfound hobby in mechanical keyboards. At the moment, I'm rocking a GMMK Compact
+          with Gateron Yellows and some cheap keycaps off of Amazon. I do have a couple of group buys coming
+          in soon and hope to expand my hobby into some more intermediate techniques such as soldering and lubing.
+          Stay tuned for more updates!
         </p>
       </div>
     </div>
   </div>
+
+  <div id="projects" class="text-center">
+    <h1 class="headers">Projects</h1>
+  </div>
+  <div class="container-fluid">
+
+    <div class="row">
+      <div class="col-md-8">
+        <h3>Legal Information Institute Web Statistics Kiosk</h3><br>
+        <p>
+          For my Software Engineering project, I worked with a group of teammates to create a series of web pages
+          depicting usage on Cornell's LII website. I was a key member of the systems subteam which handled the
+          deployment of the web pages onto a Raspberry Pi, configured system dependencies, oversaw security, and
+          improved loading speeds. I also worked on the webscraping subteam which utilized BeautifulSoup in Python to
+          scrape the web for popular news articles pertaining to keywords.
+        </p>
+      </div>
+      <div class="col-md-4 text-center">
+        <img class="project-img" src="images/lii.gif" alt="LII Kiosk" />
+      </div>
+    </div>
+    <hr />
+
+
+    <div class="row">
+      <div class="col-md-4 text-center">
+        <img class="project-img" src="images/photo_gal.png" alt="Maddie Freeman Photography" />
+      </div>
+      <div class="col-md-8">
+        <h3>Maddie Freeman Photography</h3><br>
+        <p>
+          For my Intermediate Web Programming and Development final project, I worked with a group of teammates to
+          create a full-stack web application for a client, Maddie Freeman. We utilized PHP, SQL, HTML, CSS, and Git to
+          help us create our website. Our website provided users with login, uploading, and editing functionalities.
+        </p>
+      </div>
+    </div>
+    <hr />
+
+    <div class="row">
+      <div class="col-md-8">
+        <h3>Fully-Pipelined MIPS Processor</h3><br>
+        <p>
+          For my Systems Engineering project, I worked with my friend to create a fully-pipelined MIPS Processor in
+          Logism. The processor could perform a subset of MIPS instruction such as add, sub, branch, jump, conditionals,
+          etc. We wrote about 1,000 lines of test code in MIPS assembly language to test the circuit.
+        </p>
+      </div>
+      <div class="col-md-4 text-center">
+        <img class="project-img" src="images/mips.png" alt="MIPS Processor" />
+      </div>
+    </div>
+    <hr />
+
+    <div class="row">
+      <div class="col-md-4 text-center">
+        <img class="project-img" id="ai" src="images/ai.png" alt="AI Project" />
+      </div>
+      <div class="col-md-8">
+        <h3>Handwriting Recognition</h3><br>
+        <p>
+          For my Artificial Intelligence Practicum project, I worked with a team to create a handwriting recognition
+          system through supervised machine learning. We trained digits and letters through a K-Nearest Neighbors model
+          to predict other digits, letters, and even words!
+        </p>
+      </div>
+    </div>
+    <hr />
+
+    <div class="row">
+      <div class="col-md-8">
+        <h3>Temple of Boom</h3><br>
+        <p>
+          For my Object-Oriented Programming and Data Structures course, I worked on the back-end of a GUI Java game.
+          The game utilizes Depth First Search, Breadth First Search, Heaps, and Dijkstra's Algorithm to help an
+          explorer find gold and make his way back.
+        </p>
+      </div>
+      <div class="col-md-4 text-center">
+        <img class="project-img" src="images/tob.png" alt="Temple of Boom" />
+      </div>
+    </div>
+    <hr />
+
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h3>See more on my Github!</h3>
+        <a href="https://github.com/billyzhu97" target="_blank">
+          <i class="fab fa-github fa-3x"></i>
+        </a>
+      </div>
+    </div>
+
   </div>
 
-  <div id="gallery" class="container-fluid text-center">
-    <h2>Gallery</h2><br>
-    <p>In my spare time, I like to do some mobile photography on my LG G6.
-       Here are some of my photos. Enjoy!</p>
+  <div id="photos" class="text-center">
+    <h1 class="headers">Photography</h1>
+  </div>
+
+  <div class="container-fluid">
     <div class="row text-center slideanim">
       <div class="col-sm-4">
         <div class="thumbnail">
@@ -203,36 +209,18 @@
         </div>
       </div>
     </div><br>
-</div>
-
-
-  <!-- Container (Contact Section) -->
-  <div id="contact" class="container-fluid bg-grey">
-    <h2 class="text-center">CONTACT</h2>
-    <div class="row">
-      <div class="col-sm-5 col-lg-offset-2">
-        <h4>Contact me and I'll get back to you as soon as possible!</h4>
-        <p><span class="glyphicon glyphicon-map-marker"></span> New York, US</p>
-        <p><span class="glyphicon glyphicon-phone"></span> 347-235-9972</p>
-        <p><span class="glyphicon glyphicon-envelope"></span> bz83@cornell.edu</p>
-      </div>
-      <div class="col-sm-5 slideanim">
-        <h4>Connect with me!</h4>
-        <a href="https://www.facebook.com/billyzhuptl" target="_blank"><i class="fa fa-facebook social_media" style="font-size:36px"></i></a>
-        <a href="https://www.instagram.com/zhub97/" target="_blank"><i class="fa fa-instagram social_media" style="font-size:36px"></i></a>
-        <a href="https://www.linkedin.com/in/billy-zhu" target="_blank"><i class="fa fa-linkedin social_media" style="font-size:36px"></i></a>
-      </div>
-    </div>
   </div>
 
 
-  <footer class="container-fluid text-center bg-grey">
+
+  <footer class="container-fluid text-center">
     <a href="#myPage" title="To Top">
       <span class="glyphicon glyphicon-chevron-up"></span>
     </a>
-    <p>&copy; 2017 | Billy Zhu</p>
+    <p>&copy; 2020 | Billy Zhu</p>
   </footer>
 
 
 </body>
+
 </html>

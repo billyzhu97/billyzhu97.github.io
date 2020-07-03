@@ -1,197 +1,105 @@
-body{
-  font: 400 15px 'Open Sans', sans-serif;
-  line-height: 1.6;
-  color: #818181;
-}
+#banner {
+ background: url('../images/jumbotron.png') no-repeat center center;
+ position: absolute;
+ width: 100%;
 
-h1{
-  padding-top: 100px;
-}
-h2 {
-  font-family: 'Lato', sans-serif;
-  font-size: 24px;
-  text-transform: uppercase;
-  color: #303030;
-  font-weight: 600;
-  margin-bottom: 30px;
-}
-h4 {
-  font-family: 'Lato', sans-serif;
-  font-size: 19px;
-  color: #303030;
-  font-weight: 400;
-  margin-bottom: 30px;
-}
+ /* Create the parallax scrolling effect */
+ background-attachment: fixed;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
 
-.navbar {
-  margin-bottom: 0;
-  background-color: #047bd6;
-  z-index: 9999;
-  border: 0;
-  font-size: 16px !important;
-  line-height: 1.7!important;
-  font-family: 'Montserrat', sans-serif;
-}
-.navbar li a, .navbar .navbar-brand {
-  color: #fff !important;
-}
-.navbar-nav li a:hover, .navbar-nav li.active a {
-  color: #047bd6 !important;
-  background-color: #fff !important;
-}
-.navbar-default .navbar-toggle {
-  border-color: transparent;
-  color: #fff !important;
-}
-
-.bg {
-  background: url('../images/jumbotron.png') no-repeat center center;
-  position: absolute;
-  width: 100%;
-
-  background-position: center;
-  background-size: cover;
-  height: 350px; /*same height as jumbotron */
-  top:0;
-  left:0;
-  z-index: -1;
-
-  -webkit-filter: blur(2px);
-  -moz-filter: blur(2px);
-  -o-filter: blur(2px);
-  -ms-filter: blur(2px);
-  filter: blur(2px);
+ height:100vh;
+ top:0;
+ left:0;
+ z-index: -1;
 }
 
 .jumbotron {
-  height: 350px;
+  height:100vh;
   color: #fff;
   text-shadow: #444 0 1px 1px;
+  margin-bottom: 0px;
   background:transparent;
   font-family: 'Montserrat', sans-serif;
 }
 
+.jumbotron .img-circle-polygon{
+  padding-top: 20vh;
+  width: 20%;
+}
+
 .container-fluid {
-  padding-bottom: 50px;
+  padding: 50px 0px;
   padding-left: 7%;
   padding-right: 7%;
 }
+
 .bg-grey {
   background-color: #f6f6f6;
 }
 
-#billy_pic{
+.img-circle{
+  width: 80%
+}
+
+.about_pic{
+  text-align: center;
+}
+
+.headers{
+  padding-top: 18vh;
+  color: white;
+  font-size: 48px;
+  text-shadow: #444 0 1px 1px;
+}
+
+#projects{
+  background: url('../images/project_banner.png') no-repeat center center;
   width: 100%;
-}
-.thumbnail {
-  border-radius: 5px;
-}
-.thumbnail img {
-  width: 100%;
-  height: 100%;
-  border-radius: 5px;
-}
-.carousel-control.right, .carousel-control.left {
-  background-image: none;
-  color: #f4511e;
-}
-.carousel-indicators li {
-  border-color: #f4511e;
-}
-.carousel-indicators li.active {
-  background-color: #f4511e;
-}
-.carousel-img{
-  margin: auto;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height:40vh;
+  top:0;
+  left:0;
+  z-index: -1;
 }
 
-.carousel-caption h3 {
-  color: #fff !important;
+#project_jumbotron{
+  height: 50vh;
 }
 
-.carousel-caption{
-  background-color: black;
-  opacity: 0.8;
-}
-
-#myCarousel{
-  margin: auto;
+.project-img{
   width: 80%;
 }
 
-.projects img{
-  width: 80%;
-  margin: auto;
+#ai.project-img{
+  padding-top: 50px;
 }
 
-strong{
-  color: black;
-}
-.social_media{
-  padding-left: 20px;
-  color: black;
+hr{
+  border-top-color: #0000004f
 }
 
+#photos{
+  background: url('../images/photos_banner.jpg') no-repeat center center;
+  width: 100%;
 
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
 
-footer .glyphicon {
-  font-size: 20px;
-  margin-bottom: 20px;
-  color: #047bd6;
-}
+  height:40vh;
+  top:0;
+  left:0;
+  z-index: -1;
+  
 
-.slideanim {visibility:hidden;}
-
-.slide {
-  animation-name: slide;
-  -webkit-animation-name: slide;
-  animation-duration: 1s;
-  -webkit-animation-duration: 1s;
-  visibility: visible;
-}
-
-@keyframes slide {
-  0% {
-    opacity: 0;
-    transform: translateY(70%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0%);
-  }
-}
-@-webkit-keyframes slide {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(70%);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0%);
-  }
-}
-@media screen and (max-width: 768px) {
-  .col-sm-4 {
-    text-align: center;
-    margin: 25px 0;
-  }
-}
-@media screen and (max-width: 480px) {
-  .navbar-default .navbar-toggle .icon-bar{
-    background-color: white;
-  }
-
-  #myCarousel{
-    width:100%;
-  }
-
-  .carousel-caption {
-    display:none;
-  }
-}
-
-@media screen and (min-width: 481px) {
-  #mobile_proj{
-    display: none;
-  }
 }
