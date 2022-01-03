@@ -9,17 +9,17 @@
  background-repeat: no-repeat;
  background-size: cover;
 
- height:100vh;
- top:0;
- left:0;
+ height: 100vh;
+ top: 0;
+ left: 0;
  z-index: -1;
 }
 
 .jumbotron {
-  height:100vh;
+  height: 100vh;
   color: #fff;
   text-shadow: #444 0 1px 1px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   background:transparent;
   font-family: 'Montserrat', sans-serif;
 }
@@ -30,7 +30,7 @@
 }
 
 .container-fluid {
-  padding: 50px 0px;
+  padding: 50px 0;
   padding-left: 7%;
   padding-right: 7%;
 }
@@ -43,18 +43,18 @@
   width: 80%
 }
 
-.about_pic{
+.about_pic {
   text-align: center;
 }
 
-.headers{
+.headers {
   padding-top: 18vh;
-  color: white;
+  color: #fff;
   font-size: 48px;
   text-shadow: #444 0 1px 1px;
 }
 
-#projects{
+#projects {
   background: url('../images/project_banner.png') no-repeat center center;
   width: 100%;
 
@@ -70,23 +70,28 @@
   z-index: -1;
 }
 
-#project_jumbotron{
+#project_jumbotron {
   height: 50vh;
 }
 
-.project-img{
+.project-img {
   width: 80%;
 }
 
-#ai.project-img{
+#ai.project-img {
   padding-top: 50px;
 }
 
-hr{
+hr {
   border-top-color: #0000004f
 }
 
-#photos{
+.image-col {
+  display: flex;
+  justify-content: center;
+}
+
+#photos {
   background: url('../images/photos_banner.jpg') no-repeat center center;
   width: 100%;
 
@@ -96,9 +101,9 @@ hr{
   background-repeat: no-repeat;
   background-size: cover;
 
-  height:40vh;
-  top:0;
-  left:0;
+  height: 40vh;
+  top: 0;
+  left: 0;
   z-index: -1;
   
 
